@@ -116,22 +116,7 @@ Instale pelo Gerenciador de Bibliotecas da Arduino IDE (*Sketch → Incluir Bibl
 
 ## 🚀 Como Operar o Sistema
 
-### 1. Primeira vez — Calibração
-
-O sistema possui um menu de calibração de 6 etapas acionado pelo **Botão CAL (Pin 0)** com o motor **desarmado**:
-
-| Etapa | Ação |
-|---|---|
-| **Passo 1 — Mantem** | Ajuste o potenciômetro até a bolinha flutuar parada |
-| **Passo 2 — Subida** | Ajuste até a bolinha subir suavemente |
-| **Passo 3 — Descida** | Ajuste até a bolinha descer suavemente |
-| **Passo 4 — Arrancada** | Ajuste o pulso de partida do fundo do tubo |
-| **Passo 5 — Máx. (cm)** | Defina o comprimento máximo do tubo |
-| **Passo 6 — Mín. (cm)** | Defina a margem mínima do fundo |
-
-> Em cada etapa, gire o potenciômetro e pressione o **Botão CAL** para salvar e avançar.
-
-### 2. Operação Normal
+### 1. Operação Normal
 
 ```
 1. Pressione Botão ARM (Pin 4) para armar o motor
@@ -149,7 +134,7 @@ O sistema possui um menu de calibração de 6 etapas acionado pelo **Botão CAL 
 5. Botão ARM novamente: desarma o motor
 ```
 
-### 3. Monitor Serial
+### 2. Monitor Serial
 
 Abra o Monitor Serial a **115200 baud** para acompanhar a telemetria em tempo real:
 
@@ -164,9 +149,24 @@ PWM Atual  : 3960
 
 ---
 
+### Calibração (em caso de alteração da bolinha de isopor por outra)
+
+O sistema possui um menu de calibração de 6 etapas acionado pelo **Botão CAL (Pin 0)** com o motor **desarmado**:
+
+| Etapa | Ação |
+|---|---|
+| **Passo 1 — Mantem** | Ajuste o potenciômetro até a bolinha flutuar parada |
+| **Passo 2 — Subida** | Ajuste até a bolinha subir suavemente |
+| **Passo 3 — Descida** | Ajuste até a bolinha descer suavemente |
+| **Passo 4 — Arrancada** | Ajuste o pulso de partida do fundo do tubo |
+| **Passo 5 — Máx. (cm)** | Defina o comprimento máximo do tubo |
+| **Passo 6 — Mín. (cm)** | Defina a margem mínima do fundo |
+
+> Em cada etapa, gire o potenciômetro e pressione o **Botão CAL** para salvar e avançar.
+
 ## 🧠 A Lógica Fuzzy (resumo técnico)
 
-O controlador usa **Fuzzy Incremental** (Velocity Form / Mamdani), onde a saída é uma **variação de PWM (ΔPwm)** que se acumula ciclo a ciclo — dando ao sistema memória natural sem precisar de termo integral explícito.
+O controlador usa **Fuzzy Incremental**, onde a saída é uma **variação de PWM (ΔPwm)** que se acumula ciclo a ciclo — dando ao sistema memória natural sem precisar de um PID explícito.
 
 ### Entradas
 | Variável | Descrição | Faixas |
