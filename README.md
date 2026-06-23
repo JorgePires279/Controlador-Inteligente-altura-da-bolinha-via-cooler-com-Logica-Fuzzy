@@ -116,7 +116,7 @@ Instale pelo Gerenciador de Bibliotecas da Arduino IDE (*Sketch → Incluir Bibl
 
 ## 🚀 Como Operar o Sistema
 
-### 1. Primeira vez — Calibração (obrigatório)
+### 1. Primeira vez — Calibração
 
 O sistema possui um menu de calibração de 6 etapas acionado pelo **Botão CAL (Pin 0)** com o motor **desarmado**:
 
