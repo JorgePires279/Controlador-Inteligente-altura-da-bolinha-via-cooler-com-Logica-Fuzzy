@@ -201,7 +201,9 @@ O controlador usa **Fuzzy Incremental**, onde a saída é uma **variação de PW
 ```
 levitacao-bolinha-fuzzy/
 │
-└── Controlador_Fuzzy_altitude_da_bolinha.ino   # Código-fonte completo
+└── Controlador_Fuzzy_altitude_da_bolinha.ino         # Código-fonte completo
+└── Levitacao_Bolinha_Fuzzy_Documento.pdf             # Documentação completa do projeto
+└── README.md                                         # este documento com instruções basicas
 ```
 
 ---
