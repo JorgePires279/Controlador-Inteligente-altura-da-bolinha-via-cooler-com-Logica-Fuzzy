@@ -4,7 +4,7 @@
 
 **Autor:** Jorge Luiz Madeira Pires  
 **Disciplina:** Inteligência Artificial — 2026  
-**Técnica de IA:** Lógica Fuzzy Incremental (Método Mamdani — Velocity Form)
+**Técnica de IA:** Lógica Fuzzy Incremental 
 
 ---
 
