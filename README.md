@@ -1,6 +1,6 @@
-# 🏐 Levitação de Bolinha — Controlador Fuzzy Incremental
+# 🏐 Levitação de Bolinha — Controlador Fuzzy
 
-> Sistema embarcado de levitação pneumática com Inteligência Artificial (Lógica Fuzzy Mamdani) rodando em ESP32 + FreeRTOS. A bolinha flutua dentro de um tubo PVC e é mantida em uma altura-alvo definida pelo operador — sem intervenção humana.
+> Sistema embarcado de levitação pneumática com Inteligência Artificial rodando em ESP32 + FreeRTOS. A bolinha flutua dentro de um tubo PVC e é mantida em uma altura-alvo definida pelo operador — sem intervenção humana.
 
 **Autor:** Jorge Luiz Madeira Pires  
 **Disciplina:** Inteligência Artificial — 2026  
